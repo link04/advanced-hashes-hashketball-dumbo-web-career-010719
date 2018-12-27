@@ -193,7 +193,7 @@ def add_slam_dunks
     if key == :home
       value[:players].collect do |key1, value1|
         if key1 == :slam_dunks
-          [key1] = key1 + 1
+          [key1] = value1 + 1
       end
     end
   end
