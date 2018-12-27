@@ -194,6 +194,7 @@ def add_slam_dunks
       value[:players].collect do |key1, value1|
         if key1 == :slam_dunks
           value1 += 1
+        end
       end
     end
   end
