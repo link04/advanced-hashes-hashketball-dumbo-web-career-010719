@@ -188,4 +188,16 @@ def big_shoe_rebounds
   biggest_shoe_player
 end
 
+def add_slam_dunks 
+  game_hash.each do |key, value|
+    if key == :home
+      value[:players].collect do |key1, value1|
+        if key1 == :slam_dunks
+          [key1] = key1 + 1
+      end
+    end
+  end
+end
+
+
 
