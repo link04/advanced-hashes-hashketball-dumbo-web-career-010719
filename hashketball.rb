@@ -191,7 +191,7 @@ end
 def add_slam_dunks 
   game_hash.each do |key, value|
     if key == :home
-      value[:players].collect do |key1, value1|
+      value[:players].each do |key1, value1|
         if key1 == :slam_dunks
           value1 += 1
         end
